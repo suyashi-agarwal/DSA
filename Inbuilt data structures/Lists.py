@@ -144,7 +144,7 @@ while(True):
 print('Average is:', average)
 '''
 
-
+''' 
 list = []
 while(True):
     inp = input("Enter a number: ")
@@ -153,7 +153,38 @@ while(True):
     list.append(value)
 average=sum(list)/len(list)
 
-print('Average is :',average)
+print('Average is :',average) '''
+
+
+#Conversion of strings to lists
+a = 'hey'
+b = list(a)
+print(b)
+
+c='Today is a sunny day'
+d=c.split()
+print(d)
+
+e='spam1-spam2-spam3'
+delimiter='-'
+f=e.split(delimiter)
+print(f)
+
+#list to strings
+print(delimiter.join(f))
+
+#Pitfalls of lists and ways to avoid them
+#returns none
+sortlist = [2,4,1,9,2]
+#sortlist=sortlist.sort()
+print(sortlist)
+sortlist.sort()
+print(sortlist)
+
+sorted(sortlist)
+print(sortlist)
+
+
 
 
 
